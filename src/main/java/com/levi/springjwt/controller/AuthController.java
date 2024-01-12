@@ -29,9 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
     private final AppUserService appUserService;
     private final BCryptPasswordEncoder passwordEncoder;
-
     private final AuthenticationManager authenticationManager;
-
     private final JwtService jwtService;
 
     public AuthController(AppUserService appUserService, BCryptPasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, JwtService jwtService) {
