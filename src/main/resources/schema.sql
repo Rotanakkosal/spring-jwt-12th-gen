@@ -17,3 +17,10 @@ CREATE TABLE user_role
     PRIMARY KEY (user_id, role_id)
 );
 
+CREATE TABLE books
+(
+    id SERIAL PRIMARY KEY NOT NULL ,
+    title VARCHAR(50),
+    year INT
+)
+
